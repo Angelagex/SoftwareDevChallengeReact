@@ -9,4 +9,22 @@
   flex-direction: column;
   width: 30vw;
 }
+.toDoTask {
+    display: flex;
+    background-color: rgb(244, 233, 219);
+    width: fit-content;
+    border: 1px solid rgb(254, 247, 247);
+    padding: 0px 20px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.taskTitle {
+  margin-right: 15px;
+}
+.buttons {
+  border: none;
+  background: none;
+  margin-left: 2px;
+}
 
