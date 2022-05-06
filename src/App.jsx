@@ -1,13 +1,15 @@
-import { useState } from 'react'
 import './App.css'
+import Header from './components/Header'
+import StoreProvider from './components/StoreProvider'
+import ToDoModule from './components/ToDoModule'
 
 function App() {
 
   return (
-    <div className="App">
-        <h1>ToDo App</h1>
-        
-    </div>
+    <StoreProvider>
+        <Header />
+        <ToDoModule />
+    </StoreProvider>
   )
 }
 
