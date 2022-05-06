@@ -49,8 +49,8 @@ function reducer(state, action) {
       };
       return newStateWithTaskDeleted;
     case "update-module":
-      const newListOfModule = state.listOfModule.map((note) =>
-        note.id === action.payload.id ? action.payload : note
+      const newListOfModule = state.listOfModule.map((module) =>
+        module.id === action.payload.id ? action.payload : module
       );
       const newListOfModuleChanged = {
         ...state,
@@ -58,12 +58,12 @@ function reducer(state, action) {
       };
       return newListOfModuleChanged;
     case "update-task":
-      const newListOfTask = state.listOfTask.map((note) =>
-        note.id === action.payload.id ? action.payload : note
+      const newListOfTasks = state.listOfTasks.map((task) =>
+        task.id === action.payload.id ? action.payload : task
       );
       const newListOfTaskChanged = {
         ...state,
-        listOfTask: newListOfTask,
+        listOfTask: newListOfTasks,
       };
       return newListOfTaskChanged;
   }

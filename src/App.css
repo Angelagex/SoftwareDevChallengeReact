@@ -13,11 +13,14 @@
     display: flex;
     background-color: rgb(244, 233, 219);
     width: fit-content;
-    border: 1px solid rgb(254, 247, 247);
+    border: 1px solid rgb(248, 254, 247);
+    border-radius: 10px;
     padding: 0px 20px;
     height: 40px;
     justify-content: center;
-    align-items: center;
+    align-items: center ;
+    margin-top: 5px;
+    max-width: max-content;
 }
 .taskTitle {
   margin-right: 15px;
@@ -27,4 +30,38 @@
   background: none;
   margin-left: 2px;
 }
+.toDoTask input {
+  border: none;
+  background: none;
+  width:113px;
+}
 
+.toDoTask ::placeholder { 
+  color: rgb(101, 99, 99);
+  opacity: 1;
+}
+
+.modulesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.module {
+  width: 200px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: cadetblue;
+}
+
+.titleHeader {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
