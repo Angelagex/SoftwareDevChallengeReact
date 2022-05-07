@@ -113,6 +113,7 @@ const ToDoTask = ({ task }) => {
     >
       <input
         className="taskTitle"
+        type="text"
         style={task.done ? {textDecoration: "line-through"} : {}}
         placeholder={task.title}
         disabled={!edit}

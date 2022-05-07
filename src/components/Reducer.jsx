@@ -49,12 +49,12 @@ function reducer(state, action) {
       };
       return newStateWithTaskDeleted;
     case "update-module":
-      const newListOfModule = state.listOfModule.map((module) =>
+      const newListOfModule = state.listOfModules.map((module) =>
         module.id === action.payload.id ? action.payload : module
       );
       const newListOfModuleChanged = {
         ...state,
-        listOfModule: newListOfModule,
+        listOfModules: newListOfModule,
       };
       return newListOfModuleChanged;
     case "update-task":

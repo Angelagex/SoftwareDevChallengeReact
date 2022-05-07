@@ -1,5 +1,6 @@
 .header {
   text-align: center;
+  font-size:35px; 
 }
 .toDoModule {
   color: black;
@@ -11,9 +12,9 @@
 }
 .toDoTask {
     display: flex;
-    background-color: rgb(244, 233, 219);
+    background-color: rgba(249, 248, 247, 0.68);
     width: fit-content;
-    border: 1px solid rgb(248, 254, 247);
+    border: none;
     border-radius: 10px;
     padding: 0px 20px;
     height: 40px;
@@ -29,6 +30,7 @@
   border: none;
   background: none;
   margin-left: 2px;
+  font-size: large;
 }
 .toDoTask input {
   border: none;
@@ -36,7 +38,15 @@
   width:113px;
 }
 
+.taskTitle:placeholder-shown{
+  max-width: 150px;
+  flex-wrap: wrap;
+  text-overflow: clip;
+}
+
 .toDoTask ::placeholder { 
+  display: flex;
+  flex-wrap: wrap;
   color: rgb(101, 99, 99);
   opacity: 1;
 }
@@ -49,15 +59,14 @@
 }
 
 .module {
-  width: 200px;
+  width: 300px;
   margin: 20px;
-  border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  background-color: cadetblue;
+  background-color: rgba(181, 218, 219, 0.619);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
 .titleHeader {
   display: flex;
   flex-direction: row;
@@ -65,3 +74,42 @@
   align-items: center;
   justify-content: center;
 }
+
+.submitBtn {
+
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .submitBtn:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .submitBtn:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .submitBtn {
+      padding: 13px 50px 13px;
+    }
+  }

@@ -7,7 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: bisque;
+  background-image: url("https://i.ibb.co/QfwS5Zc/beatiful-geometric-composition-with-blue-and-purple-paperboard-with-copyspace.jpg");
+  background-size: 100%;
+  font-family: 'Allerta Stencil';
+
 }
 
 code {
